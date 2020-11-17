@@ -28,7 +28,7 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    - Create Player Sprites, at least 1 frame for each set of attacks
 
 - **[Sprint 2](changelog/sprint-2.md) - 25/11/2020 - 1/12/2020**<br/>
-**By the end of the sprint, the combo system should be finalzied, and enemy AIs should be implemented**
+**By the end of the sprint, the combo system should be finalized, and enemy AIs should be implemented**
    - Enemy AI configuration 
       - Checks enemy count every 3 ticks. If there are less than 5 enemy  instances, spawn one enemy.
       - For individual enemy instances, if they are far from the player's current position, move towards them.
