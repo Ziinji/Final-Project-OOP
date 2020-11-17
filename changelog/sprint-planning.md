@@ -26,9 +26,9 @@
 | 2.5 | Combo State implementation |Alfathar |
 | 2.6 | Create Sprites for enemy entity |Alfathar |
 | 3.1 | Error Handler depending on necessity | |
-| 3.1 | Graphic and general aesthetic polishing |Alfathar |
-| 3.1 | Combo system finalization |Alfathar |
-| 3.1 | Enemy behavior finalization | |
+| 3.2 | Graphic and general aesthetic polishing |Alfathar |
+| 3.3 | Combo system finalization |Alfathar |
+| 3.4 | Enemy behavior finalization | |
 
 
 ## Sprint Backlog Plan (Sprint 1)
