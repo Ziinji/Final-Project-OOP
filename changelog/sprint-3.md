@@ -1,5 +1,5 @@
 # Scrum Report (Sprint 3)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 2/12/2020 to 8/12/2020
 
 ## Team (Insert your name)
 | NPM           | Name        |
@@ -17,10 +17,12 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Preparing the x | Jane Doe | DONE |
-| 3.2 | Make the x | John Doe | FAILED |
+| 3.1 | Error Handler depending on necessity | |
+| 3.2 | Graphic and general aesthetic polishing |Alfathar |
+| 3.3 | Combo system finalization |Alfathar |
+| 3.4 | Enemy behavior finalization | |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+N/A
 
