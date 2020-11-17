@@ -4,7 +4,8 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 [Challenge Guidelines](challenge-guideline.md)
 
-**Please create a description for this project here**
+**Cresser Project** merupakan sebuah Video Game ber-genre Beat 'em up, dimana player akan melawan sejumlah besar musuh. Cresser Project
+akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character.
 
 ## Credits
 | NPM           | Name        |
@@ -15,7 +16,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Change log
 - **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
-   -  Short changes 1
+   - Short changes 1
    - Short changes 2
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
