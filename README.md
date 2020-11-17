@@ -18,7 +18,7 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
 - **[Sprint Planning](changelog/sprint-planning.md) - 17/11/2020** 
 
 - **[Sprint 1](changelog/sprint-1.md) - 18/11/2020 - 24/11/2020** 
-- **By the end of the sprint, all classes should be available, and Players should be able to move their character
+- **By the end of the sprint, all classes should be available, and Players should be able to move their character**
    - Initializing JFrame (Classes Map, World, and interface Drawable all should be available)
    - Create Class Character
    - Create Class Player and Enemy (extends Character)
@@ -27,7 +27,7 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    - Create Player Sprites, at least 1 frame for each set of attacks
 
 - **[Sprint 2](changelog/sprint-2.md) - 25/11/2020 - 1/12/2020** 
-- **By the end of the sprint, the combo system should be finalzied, and enemy AIs should be implemented
+- **By the end of the sprint, the combo system should be finalzied, and enemy AIs should be implemented**
    - Enemy AI configuration 
       - Checks enemy count every 3 ticks. If there are less than 5 enemy  instances, spawn one enemy.
       - For individual enemy instances, if they are far from the player's current position, move towards them.
@@ -40,8 +40,10 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    
 - **[Sprint 3](changelog/sprint-3.md) - 2/12/2020 - 8/12/2020** 
 - **Mainly polishing**
-   - Short changes 1
-   - Short changes 2
+   - Error Handler
+   - Add extra frames for smoother animations
+   - Other aesthetical changes if it were to lack
+   - Finalization on Enemy AI and Combo System
 
 ## Running The App
 
