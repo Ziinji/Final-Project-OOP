@@ -1,12 +1,12 @@
 # Scrum Report (Sprint 1)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 18/11/2020 to 24/11/2020
 
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190058  | Alfathar Yusvi H |
+| 140810190024  | Birgitta Laura T |
+| 140810170048  | Ghema Allan F    |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
@@ -17,15 +17,25 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Preparing the x | Jane Doe | DONE |
-| 1.2 | Make the x | John Doe | FAILED |
+| 1.1 | JFrame necessities | Alfathar | 
+| 1.2 | Create JFrame class dependables (World, Map, Drawbale classes | Alfathar |
+| 1.3 | Create Class Character and EControls enum | |
+| 1.4 | Create Class Player | |
+| 1.5 | Create Abstract Class ComboState and ECombos enum | |
+| 1.6 | Create Class Enemy | | 
+| 1.7 | Create Sprites for Player actions |Alfathar |
+| 1.8 | Player Character Movement |Alfathar |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+N/A
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1 | Enemy spawn behavior | |
+| 2.2 | Enemy pathfinding behavior | |
+| 2.3 | Enemy attack behavior | |
+| 2.4 | Player character attack action | |
+| 2.5 | Combo State implementation |Alfathar |
+| 2.6 | Create Sprites for enemy entity |Alfathar |
