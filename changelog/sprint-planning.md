@@ -19,12 +19,17 @@
 | 1.6 | Create Class Enemy | | 
 | 1.7 | Create Sprites for Player actions |Alfathar |
 | 1.8 | Player Character Movement |Alfathar |
-| 2.1 | Enemy spawner function | |
-| 2.2 | Enemy pathfinding | |
-| 2.3 | Enemy attack action | |
+| 2.1 | Enemy spawn behavior | |
+| 2.2 | Enemy pathfinding behavior | |
+| 2.3 | Enemy attack behavior | |
 | 2.4 | Player character attack action | |
-| 2.5 | Combo State implementation | |
-| 3.1 | Finish touches on graphic 
+| 2.5 | Combo State implementation |Alfathar |
+| 2.6 | Create Sprites for enemy entity |Alfathar |
+| 3.1 | Error Handler depending on necessity | |
+| 3.1 | Graphic and general aesthetic polishing |Alfathar |
+| 3.1 | Combo system finalization |Alfathar |
+| 3.1 | Enemy behavior finalization | |
+
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
