@@ -47,15 +47,14 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    - Finalization on Enemy AI and Combo System
 
 ## Running The App
-
-TO;DO with steps
+   - Player spawn di tengah screen
+   - Player bisa mulai menggerakkan karakter setelah menekan tombol spasi.
+   - 2 musuh akan spawn di posisi acak, lalu 1 lagi untuk setiap 3 tick sampai jumlah musuh dalam screen mencapai 5.
+   - Jika player berhasil membunuh musuh, mereka mendapat *1 kill*, dan program akan terus men-cek ulang berapa jumlah instansi musuh (Max 5)
+   - Jika *health* player mencapai 0, game selesai dan akan ditampilkan berapa skor player sesuai kill count mereka
 
 ## Classes Used
-
-TO;DO
 
 ![UML](/images/UML.png "UML")
 
 ## Notable Assumption and Design App Details
-
-TO;DO
