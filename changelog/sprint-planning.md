@@ -1,18 +1,22 @@
 # Sprint Planning 
-| dd/mm/yyyy
+| 17/11/2020
 
-### Team (Insert your name)
+## Credits
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190058  | Alfathar Yusvi H |
+| 140810190024  | Birgitta Laura T |
+| 140810170048  | Ghema Allan F    |
 
 ## Sprint Backlog Keseluruhan 
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 1.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 1.1 | Create Character Class | Alfathar | 
+| 1.2 | Create Enumeration Class EControls | Ghema |
+| 1.3 | Create Character Sprites | Alfathar |
+| 1.4 | Create Enemy Class | Birgitta |
+| 1.3 |  | John Doe | 
+| 3.3 | Finish touches on graphic
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
