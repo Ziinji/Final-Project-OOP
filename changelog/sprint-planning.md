@@ -18,7 +18,13 @@
 | 1.5 | Create Abstract Class ComboState and ECombos enum | |
 | 1.6 | Create Class Enemy | | 
 | 1.7 | Create Sprites for Player actions |Alfathar |
-| 3.3 | Finish touches on graphic 
+| 1.8 | Player Character Movement |Alfathar |
+| 2.1 | Enemy spawner function | |
+| 2.2 | Enemy pathfinding | |
+| 2.3 | Enemy attack action | |
+| 2.4 | Player character attack action | |
+| 2.5 | Combo State implementation | |
+| 3.1 | Finish touches on graphic 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
