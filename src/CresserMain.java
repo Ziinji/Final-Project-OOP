@@ -11,11 +11,11 @@ public class CresserMain extends JFrame {
 
         add(new Drawable());
 
-        setTitle("Moving sprite");
+        setTitle("Cresser Project");
         setSize(960, 575);
 
         setLocationRelativeTo(null);
-        setResizable(true);
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 

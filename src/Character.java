@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.ImageObserver;
 
 enum EntityState{
     MOVING, STANDING
@@ -16,7 +17,9 @@ public class Character {
     private int y;
     private int w;
     private int h;
+    private int health;
     private Image image;
+    EFacing pos = EFacing.FACING_RIGHT;
 
     public void loadImage(String filename) {
 
@@ -29,6 +32,12 @@ public class Character {
 
     public void move() {
         x += dx;
+        if(x<=-140){
+            x=-140;
+        }
+        if(x>=730){
+            x=730;
+        }
     }
 
     public int getX() {
@@ -40,12 +49,10 @@ public class Character {
     }
 
     public void setX(int x) {
-
         this.x = x;
     }
 
     public void setY(int y) {
-
         this.y = y;
     }
 
@@ -73,5 +80,8 @@ public class Character {
 
     public void stand() {
         dx = 0;
+    }
+
+    public void kill(){
     }
 }

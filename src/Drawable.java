@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -58,13 +59,21 @@ public class Drawable extends JPanel implements ActionListener {
     private void drawPlayer(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawImage(alysse.getImage(), alysse.getX(), alysse.getY(), this);
+        if (alysse.pos == EFacing.FACING_RIGHT) {
+            g2d.drawImage(alysse.getImage(), alysse.getX(), alysse.getY(), this);
+        } else {
+            g2d.drawImage(alysse.getImage(), alysse.getX() + alysse.getWidth(), alysse.getY(), -alysse.getWidth(), alysse.getHeight(), (ImageObserver) this);
+        }
     }
 
     private void drawEnemy(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawImage(monster.getImage(), monster.getX(), monster.getY(), this);
+        if (monster.pos == EFacing.FACING_RIGHT) {
+            g2d.drawImage(monster.getImage(), monster.getX(), monster.getY(), this);
+        } else {
+            g2d.drawImage(monster.getImage(), monster.getX() + monster.getWidth(), monster.getY(), -monster.getWidth(), monster.getHeight(), (ImageObserver) this);
+        }
     }
 
     @Override

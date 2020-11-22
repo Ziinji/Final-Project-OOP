@@ -15,9 +15,18 @@ public class Enemy extends Character {
     }
 
     public void chase(Player target){
-        if (super.getX() < target.getX()){
+        if ((super.getX() - target.getX() < 75) && (super.getX() - target.getX() > -75)) {
+            super.stand();
+            if(super.getX() < target.getX()){
+                super.pos = EFacing.FACING_RIGHT;
+            } else {
+                super.pos = EFacing.FACING_LEFT;
+            }
+        } else if (super.getX() < target.getX()){
+            super.pos = EFacing.FACING_RIGHT;
             super.moveRight(2);
         } else if (super.getX() > target.getX()){
+            super.pos = EFacing.FACING_LEFT;
             super.moveLeft(2);
         } else {
             super.stand();
@@ -25,10 +34,8 @@ public class Enemy extends Character {
     }
 
     public void attack(){
-
-    }
-
-    public void kill(){
-
+        //if(enemy.x - player.x < 50 || player.x = enemy.x < 50){
+            //Attack
+            //OnHit
     }
 }

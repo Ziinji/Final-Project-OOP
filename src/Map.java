@@ -10,7 +10,6 @@ public class Map {
     private Image image;
 
     public Map() {
-
         loadImage();
     }
 

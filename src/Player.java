@@ -1,6 +1,11 @@
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.image.ImageObserver;
 
 public class Player extends Character implements ComboState{
+
+    private Image img;
 
     public Player(){
         super.loadImage("images/Sprites/Player/sprite_19.png");
@@ -12,11 +17,13 @@ public class Player extends Character implements ComboState{
         int key = e.getKeyCode();
 
         if (key == KeyEvent.VK_LEFT) {
-            super.moveLeft(5);
+            super.pos = EFacing.FACING_LEFT;
+            super.moveLeft(4);
         }
 
         if (key == KeyEvent.VK_RIGHT) {
-            super.moveRight(5);
+            super.pos = EFacing.FACING_RIGHT;
+            super.moveRight(4);
         }
     }
 
