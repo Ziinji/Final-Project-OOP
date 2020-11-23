@@ -25,6 +25,7 @@
 | 2.4 | Player character attack action | |
 | 2.5 | Combo State implementation |Alfathar |
 | 2.6 | Create Sprites for enemy entity |Alfathar |
+| 2.7 | Collision detection on attack |Alfathar |
 | 3.1 | Error Handler depending on necessity | |
 | 3.2 | Graphic and general aesthetic polishing |Alfathar |
 | 3.3 | Combo system finalization |Alfathar |
