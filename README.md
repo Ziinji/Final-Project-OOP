@@ -48,6 +48,7 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    - Finalization on Enemy AI and Combo System
 
 ## Running The App
+   - Compile program
    - Player spawn di tengah screen
    - Player bisa mulai menggerakkan karakter setelah menekan tombol spasi.
    - 2 musuh akan spawn di posisi acak, lalu 1 lagi untuk setiap 3 tick sampai jumlah musuh dalam screen mencapai 5.
