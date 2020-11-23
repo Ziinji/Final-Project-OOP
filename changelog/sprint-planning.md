@@ -11,12 +11,12 @@
 ## Sprint Backlog Keseluruhan 
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 1.1 | JFrame necessities | Alfathar | 
+| 1.1 | JFrame necessities | Birgitta | 
 | 1.2 | Create JFrame class dependables (World, Map, Drawbale classes | Alfathar |
-| 1.3 | Create Class Character and EControls enum | |
-| 1.4 | Create Class Player | |
-| 1.5 | Create Abstract Class ComboState and ECombos enum | |
-| 1.6 | Create Class Enemy | | 
+| 1.3 | Create Class Character and EControls enum |Alfathar |
+| 1.4 | Create Class Player |Ghema |
+| 1.5 | Create Abstract Class ComboState and ECombos enum |Ghema |
+| 1.6 | Create Class Enemy |Birgitta | 
 | 1.7 | Create Sprites for Player actions |Alfathar |
 | 1.8 | Player Character Movement |Alfathar |
 | 2.1 | Enemy spawn behavior | |
