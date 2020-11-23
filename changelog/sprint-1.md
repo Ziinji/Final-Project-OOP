@@ -17,14 +17,14 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | JFrame necessities | Alfathar | 
-| 1.2 | Create JFrame class dependables (World, Map, Drawbale classes | Alfathar |
-| 1.3 | Create Class Character and EControls enum | |
-| 1.4 | Create Class Player | |
-| 1.5 | Create Abstract Class ComboState and ECombos enum | |
-| 1.6 | Create Class Enemy | | 
-| 1.7 | Create Sprites for Player actions |Alfathar |
-| 1.8 | Player Character Movement |Alfathar |
+| 1.1 | JFrame necessities | Alfathar | DONE |
+| 1.2 | Create JFrame class dependables (World, Map, Drawbale classes | Alfathar | DONE |
+| 1.3 | Create Class Character and EControls enum |Alfathar | DONE |
+| 1.4 | Create Class Player |Ghema | DONE |
+| 1.5 | Create Abstract Class ComboState and ECombos enum |Ghema | DONE |
+| 1.6 | Create Class Enemy |Alfathar |DONE |
+| 1.7 | Create Sprites for Player actions |Alfathar | DONE |
+| 1.8 | Player Character Movement |Alfathar | DONE |
 
 ## Retrospective 
 
