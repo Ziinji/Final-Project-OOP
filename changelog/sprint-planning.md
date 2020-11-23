@@ -37,7 +37,7 @@
 | 1.1 | JFrame necessities |Birgitta | 
 | 1.2 | Create JFrame class dependables (World, Map, Drawbale classes | Alfathar |
 | 1.3 | Create Class Character|Alfathar |
-| 1.4 | Create Class Player |Alfathar |
+| 1.4 | Create Class Player |Ghema |
 | 1.5 | Create Abstract Class ComboState and ECombos enum | Ghema |
 | 1.6 | Create Class Enemy | Birgitta | 
 | 1.7 | Create Sprites for Player actions |Alfathar |
