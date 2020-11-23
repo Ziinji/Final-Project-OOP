@@ -34,7 +34,7 @@ N/A
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
 | 2.1 | Enemy spawn behavior | |
-| 2.2 | Enemy pathfinding behavior | |
+| 2.2 | Enemy pathfinding behavior |Alfathar |
 | 2.3 | Enemy attack behavior | |
 | 2.4 | Player character attack action | |
 | 2.5 | Combo State implementation |Alfathar |
