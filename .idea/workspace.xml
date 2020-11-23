@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff220465-4488-4338-b0b4-3b6667540a0d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kbkezRYtz15WQ65hQYXn6nwM0D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Java Scratch.CresserMain">
+    <configuration name="java" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-1.11.0-openjdk-amd64" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="CresserMain.java" />
+      <module name="Cresser-Project" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CresserMain" type="Java Scratch" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CresserMain" />
+      <module name="Cresser-Project" />
+      <option name="SCRATCH_FILE_URL" value="file://$PROJECT_DIR$/src/CresserMain.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.java" />
+      <item itemvalue="Java Scratch.CresserMain" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff220465-4488-4338-b0b4-3b6667540a0d" name="Default Changelist" comment="" />
+      <created>1605976786077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605976786077</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="353" y="226" width="1201" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606103373594">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="353" y="226" width="1201" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.34.1853.1046@67.34.1853.1046" timestamp="1606103373594" />
+    <state x="718" y="195" width="530" height="723" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606102656896">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="718" y="195" width="530" height="723" key="#com.intellij.ide.macro.MacrosDialog/67.34.1853.1046@67.34.1853.1046" timestamp="1606102656896" />
+    <state x="650" y="283" width="655" height="548" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1606102709908">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="650" y="283" width="655" height="548" key="#com.intellij.ide.util.PackageChooserDialog/67.34.1853.1046@67.34.1853.1046" timestamp="1606102709908" />
+    <state x="655" y="301" width="656" height="510" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606103091074">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="655" y="301" width="656" height="510" key="#com.intellij.ide.util.TreeClassChooserDialog/67.34.1853.1046@67.34.1853.1046" timestamp="1606103091074" />
+    <state x="822" y="368" width="370" height="582" key="EnvironmentVariablesDialog" timestamp="1606102949309">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="822" y="368" width="370" height="582" key="EnvironmentVariablesDialog/67.34.1853.1046@67.34.1853.1046" timestamp="1606102949309" />
+    <state x="723" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1606103151958">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="723" y="257" width="530" height="598" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1606103151958" />
+    <state width="1797" height="262" key="GridCell.Tab.0.bottom" timestamp="1606027277759">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state width="1797" height="262" key="GridCell.Tab.0.bottom/67.34.1853.1046@67.34.1853.1046" timestamp="1606027277759" />
+    <state width="1797" height="262" key="GridCell.Tab.0.center" timestamp="1606027277758">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state width="1797" height="262" key="GridCell.Tab.0.center/67.34.1853.1046@67.34.1853.1046" timestamp="1606027277758" />
+    <state width="1797" height="262" key="GridCell.Tab.0.left" timestamp="1606027277757">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state width="1797" height="262" key="GridCell.Tab.0.left/67.34.1853.1046@67.34.1853.1046" timestamp="1606027277757" />
+    <state width="1797" height="262" key="GridCell.Tab.0.right" timestamp="1606027277759">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state width="1797" height="262" key="GridCell.Tab.0.right/67.34.1853.1046@67.34.1853.1046" timestamp="1606027277759" />
+    <state x="358" y="103" key="SettingsEditor" timestamp="1606103446133">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="358" y="103" key="SettingsEditor/67.34.1853.1046@67.34.1853.1046" timestamp="1606103446133" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Cresser_Project$CresserMain.ic" NAME="CresserMain Coverage Results" MODIFIED="1606101707964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
