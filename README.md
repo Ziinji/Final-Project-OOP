@@ -38,6 +38,7 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
       - Attacks will change accordingly to the current state
       - Players has a window of 1 tick to perform the next attack within a combo before state returns to default.
    - Create Enemy Sprites
+   - Attack function and collision detection
    
 - **[Sprint 3](changelog/sprint-3.md) - 2/12/2020 - 8/12/2020**<br/>
 **Mainly polishing**
