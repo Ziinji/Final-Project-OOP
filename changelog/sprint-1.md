@@ -39,3 +39,4 @@ N/A
 | 2.4 | Player character attack action | |
 | 2.5 | Combo State implementation |Alfathar |
 | 2.6 | Create Sprites for enemy entity |Alfathar |
+| 2.7 | Collision detection on attack |Alfathar |
