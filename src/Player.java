@@ -25,6 +25,8 @@ public class Player extends Character implements AttackState{
             super.loadImage("images/Sprites/Player/Sprite-atk-001.png");
         } else if (state == EntityState.MOVING){
             super.loadImage("images/Sprites/Player/run.gif");
+        } else if (state == EntityState.ATTACKED){
+            super.loadImage("images/Sprites/Player/HitStun.png");
         }else{
             super.loadImage("images/Sprites/Player/standing.gif");
         }

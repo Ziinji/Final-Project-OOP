@@ -9,20 +9,42 @@ public class Enemy extends Character {
     private boolean can_attack = false;
 
     public Enemy(){
-        super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+        loadImg();
         spawn();
         super.setY(325);
-        Timer timerEnemy = new Timer();
-        timerEnemy.scheduleAtFixedRate(new TimerTask() {
+        Timer timerEnemyAttack = new Timer();
+        timerEnemyAttack.scheduleAtFixedRate(new TimerTask() {
             public void run() {
-                Enemy.this.change_attack_state();
+                Enemy.this.toggle_attack();
             }
         }, 0, 3000);
+        timerEnemyAttack.scheduleAtFixedRate(new TimerTask() {
+            public void run() {
+                Enemy.this.done_attack();
+            }
+        }, 300, 3000);
     }
 
-    public void change_attack_state(){
+    public void loadImg() {
+        if (state == EntityState.STANDING) {
+            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+        } else if (state == EntityState.ATTACKING) {
+            super.loadImage("images/Sprites/Enemy/Enemy_Attack.gif");
+        } else if (state == EntityState.MOVING){
+            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+        } else if (state == EntityState.ATTACKED){
+            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+        }else{
+            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+        }
+    }
+
+    public void toggle_attack(){
+        super.state = EntityState.ATTACKING;
         this.can_attack = true;
     }
+
+    public void done_attack(){  super.state = EntityState.STANDING; }
 
     public void spawn(){
         super.setHealth(100);
@@ -46,7 +68,7 @@ public class Enemy extends Character {
     }
 
     public void chase(Player target){
-        if ((Math.abs(super.getX() - target.getX()) < 30) && this.can_attack) {
+        if ((Math.abs(super.getX() - target.getX()) < 60) && (this.can_attack)) {
             super.stand();
             super.attack(target, 20);
             this.can_attack = false;
@@ -56,10 +78,10 @@ public class Enemy extends Character {
             } else {
                 super.pos = EFacing.FACING_LEFT;
             }
-        } else if (super.getX() < target.getX()){
+        } else if (super.getX() < target.getX()-50){
             super.pos = EFacing.FACING_RIGHT;
             super.moveRight(2);
-        } else if (super.getX() > target.getX()){
+        } else if (super.getX() > target.getX()+50){
             super.pos = EFacing.FACING_LEFT;
             super.moveLeft(2);
         } else {

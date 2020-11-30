@@ -149,6 +149,7 @@ public class Drawable extends JPanel implements ActionListener {
     private void enemyStep(){
         monster.chase(alysse);
         monster.move();
+        monster.loadImg();
         repaint(monster.getX()-1, monster.getY()-1, monster.getWidth()+2, monster.getHeight()+2);
     }
 
