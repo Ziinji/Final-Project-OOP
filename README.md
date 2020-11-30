@@ -47,7 +47,10 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    - Finalization on Enemy AI and Combo System
 
 ## Running The App
-   - 
+   - Open root folder
+   - Navigate to /out/production/CresserProject
+   - Go to terminal/cmd
+   - Run 'java CresserMain' (without ')
 
 ## Classes Used
 
