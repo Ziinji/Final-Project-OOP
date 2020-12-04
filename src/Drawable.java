@@ -186,6 +186,7 @@ public class Drawable extends JPanel implements ActionListener {
                         alysse.zPressed = true;
                         switch(alysse.combo_state){
                             case NONE:
+                            case X:
                                 alysse.attack(monster, 20);
                                 // Delay here. Jadi pas attack dia state NONE, abis attack state Z
                                 // Delay on animation. Abis pencet tombol, tahan PNG sekitar 200MS
@@ -197,13 +198,14 @@ public class Drawable extends JPanel implements ActionListener {
                                 break;
                             case ZZ:
                                 alysse.attack(monster, 40);
-                                alysse.combo_state = Combo.NONE;
+                                alysse.combo_state = Combo.ZZZ;
                                 break;
                         }
                     } else if (key == KeyEvent.VK_X){
                         alysse.xPressed = true;
                         switch (alysse.combo_state) {
                             case NONE:
+                            case Z:
                                 alysse.attack(monster, 35);
                                 alysse.combo_state = Combo.X;
                                 break;
@@ -212,6 +214,7 @@ public class Drawable extends JPanel implements ActionListener {
                                 alysse.attack(monster, 15);
                                 alysse.combo_state = Combo.NONE;
                                 alysse.heal(10);
+                                alysse.combo_state = Combo.XX;
                                 break;
                         }
                     }

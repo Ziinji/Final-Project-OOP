@@ -3,7 +3,7 @@ import java.awt.event.KeyEvent;
 import java.util.*;
 
 enum Combo {
-    NONE, Z, ZZ, ZZX, X, XZ, XXZ
+    NONE, Z, ZZ, ZZZ, X, XX, ZZX
 }
 
 public class Player extends Character implements AttackState{
@@ -23,7 +23,7 @@ public class Player extends Character implements AttackState{
         super.setX(100);
         super.setY(325);
         Timer timerPlayer = new Timer();
-        timerPlayer.scheduleAtFixedRate(new TimerTask() {
+        /*timerPlayer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
                 Player.this.attacked();
             }
@@ -32,7 +32,7 @@ public class Player extends Character implements AttackState{
             public void run() {
                 Player.this.comboPhase();
             }
-        }, 0, 1000);
+        }, 0, 1000);*/
     }
 
     public void loadImg() {
@@ -42,17 +42,17 @@ public class Player extends Character implements AttackState{
                 super.loadImage("images/Sprites/Player/idle.gif");
                 break;
             case ATTACKING:
-                if (combo_state == Combo.NONE && zPressed) {
+                if (combo_state == Combo.Z && zPressed) {
                     super.loadImage("images/Sprites/Player/atkZ1.png");
-                } else if (combo_state == Combo.NONE && xPressed){
+                } else if (combo_state == Combo.X && xPressed){
                     super.loadImage("images/Sprites/Player/atkX1.png");
-                } else if (combo_state == Combo.Z && zPressed){
-                    super.loadImage("images/Sprites/Player/atkZ2.png");
                 } else if (combo_state == Combo.ZZ && zPressed){
+                    super.loadImage("images/Sprites/Player/atkZ2.png");
+                } else if (combo_state == Combo.ZZZ && zPressed){
                     super.loadImage("images/Sprites/Player/atkZ3.png");
-                } else if (combo_state == Combo.X && xPressed) {
+                } else if (combo_state == Combo.XX && xPressed) {
                     super.loadImage("images/Sprites/Player/atkX2.png");
-                } else if (combo_state == Combo.ZZ && xPressed) {
+                } else if (combo_state == Combo.ZZX && xPressed) {
                     super.loadImage("images/Sprites/Player/atkX2.png");
                 }
                 break;
@@ -68,7 +68,7 @@ public class Player extends Character implements AttackState{
         }
     }
 
-    public void attacked(){
+    /*public void attacked(){
         if (super.state == EntityState.ATTACKED){
             super.state = EntityState.STANDING;
         }
@@ -77,7 +77,7 @@ public class Player extends Character implements AttackState{
     public void comboPhase() {
         getCombo_state();
         combo_state = Combo.NONE;
-    }
+    }*/
 
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
@@ -101,12 +101,18 @@ public class Player extends Character implements AttackState{
         if (key == KeyEvent.VK_Z){
             zPressed = false;
             attacking = true;
+            if (combo_state == Combo.ZZZ){
+                combo_state = Combo.NONE;
+            }
             super.state = EntityState.STANDING;
         }
 
         if (key == KeyEvent.VK_X){
             xPressed = false;
             attacking = true;
+            if (combo_state == Combo.XX){
+                combo_state = Combo.NONE;
+            }
             super.state = EntityState.STANDING;
         }
 
