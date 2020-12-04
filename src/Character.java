@@ -90,12 +90,16 @@ public class Character {
         this.health = health;
     }
 
-    public void setVisible(Boolean visible) {
-        this.visible = visible;
-    }
-
     public Rectangle getBounds() {
         return new Rectangle(x, y, w-300, h);
+    }
+
+    public void heal(int heal){
+        if (health > 195){
+            this.health = 200;
+        } else {
+            this.health = this.health + 5;
+        }
     }
 
     public void attack(Character target, int damage){

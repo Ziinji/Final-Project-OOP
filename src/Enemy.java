@@ -5,7 +5,6 @@ import java.util.*;
 
 public class Enemy extends Character {
 
-    private boolean attacked = true;
     private boolean can_attack = false;
 
     public Enemy(){
@@ -27,11 +26,11 @@ public class Enemy extends Character {
 
     public void loadImg() {
         if (state == EntityState.STANDING) {
-            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+            super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
         } else if (state == EntityState.ATTACKING) {
             super.loadImage("images/Sprites/Enemy/Enemy_Attack.gif");
         } else if (state == EntityState.MOVING){
-            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+            super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
         } else if (state == EntityState.ATTACKED){
             super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
         }else{
@@ -44,7 +43,10 @@ public class Enemy extends Character {
         this.can_attack = true;
     }
 
-    public void done_attack(){  super.state = EntityState.STANDING; }
+    public void done_attack(){
+
+        super.state = EntityState.STANDING;
+    }
 
     public void spawn(){
         super.setHealth(100);

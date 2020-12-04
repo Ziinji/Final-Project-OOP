@@ -172,7 +172,7 @@ public class Drawable extends JPanel implements ActionListener {
             if (key == KeyEvent.VK_ESCAPE){
                 if(gameState == GameState.PAUSED){
                     gameState = GameState.PLAYING;
-                } else {
+                } else if (gameState == GameState.PLAYING) {
                     gameState = GameState.PAUSED;
                 }
             }
@@ -183,11 +183,37 @@ public class Drawable extends JPanel implements ActionListener {
                     alysse.attacking = false;
 
                     if(key == KeyEvent.VK_Z){
-                        alysse.combo_state = Combo.Z;
-                        alysse.attack(monster, 20);
+                        alysse.zPressed = true;
+                        switch(alysse.combo_state){
+                            case NONE:
+                                alysse.attack(monster, 20);
+                                // Delay here. Jadi pas attack dia state NONE, abis attack state Z
+                                // Delay on animation. Abis pencet tombol, tahan PNG sekitar 200MS
+                                alysse.combo_state = Combo.Z;
+                                break;
+                            case Z:
+                                alysse.attack(monster, 30);
+                                alysse.combo_state = Combo.ZZ;
+                                break;
+                            case ZZ:
+                                alysse.attack(monster, 40);
+                                alysse.combo_state = Combo.NONE;
+                                break;
+                        }
                     } else if (key == KeyEvent.VK_X){
-                        alysse.combo_state = Combo.X;
-                        alysse.attack(monster, 25);
+                        alysse.xPressed = true;
+                        switch (alysse.combo_state) {
+                            case NONE:
+                                alysse.attack(monster, 35);
+                                alysse.combo_state = Combo.X;
+                                break;
+                            case X:
+                            case ZZ:
+                                alysse.attack(monster, 15);
+                                alysse.combo_state = Combo.NONE;
+                                alysse.heal(10);
+                                break;
+                        }
                     }
 
                 }
