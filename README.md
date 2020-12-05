@@ -41,7 +41,6 @@ akan menggunakan sebuah Combo sistem yang di-kontrol oleh State Player Character
    
 - **[Sprint 3](changelog/sprint-3.md) - 2/12/2020 - 8/12/2020**<br/>
 **Mainly polishing**
-   - Error Handler
    - Add extra frames for smoother animations
    - Other aesthetical changes if it were to lack
    - Finalization on Enemy AI and Combo System
