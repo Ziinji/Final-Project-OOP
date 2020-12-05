@@ -17,10 +17,9 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Error Handler depending on necessity | |
-| 3.2 | Graphic and general aesthetic polishing |Alfathar |
-| 3.3 | Combo system finalization |Alfathar |
-| 3.4 | Enemy behavior finalization | |
+| 3.1 | Graphic and general aesthetic polishing |Alfathar |
+| 3.2 | Combo system finalization |Alfathar |
+| 3.3 | Enemy behavior finalization | |
 
 ## Retrospective 
 
