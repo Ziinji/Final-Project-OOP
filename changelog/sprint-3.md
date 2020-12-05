@@ -18,8 +18,8 @@
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
 | 3.1 | Graphic and general aesthetic polishing |Alfathar |
-| 3.2 | Combo system finalization |Alfathar |
-| 3.3 | Enemy behavior finalization | |
+| 3.2 | Combo system finalization |Birgitta |
+| 3.3 | Enemy behavior finalization |Ghema |
 
 ## Retrospective 
 
