@@ -18,7 +18,7 @@ public class Player extends Character implements AttackState{
 
     public Player(){
         loadImg();
-        super.setHealth(10);
+        super.setHealth(200);
         super.setX(100);
         super.setY(325);
     }
@@ -35,17 +35,17 @@ public class Player extends Character implements AttackState{
                         super.loadImage("images/Sprites/Player/atkZ1.gif");
                         break;
                     case X:
-                        super.loadImage("images/Sprites/Player/atkX1.png");
+                        super.loadImage("images/Sprites/Player/atkX1.gif");
                         break;
                     case ZZ:
                         super.loadImage("images/Sprites/Player/atkZ2.gif");
                         break;
                     case ZZZ:
-                        super.loadImage("images/Sprites/Player/atkZ3.png");
+                        super.loadImage("images/Sprites/Player/atkZ3.gif");
                         break;
                     case XX:
                     case ZZX:
-                        super.loadImage("images/Sprites/Player/atkX2.png");
+                        super.loadImage("images/Sprites/Player/atkX2.gif");
                         break;
                 }
                 break;

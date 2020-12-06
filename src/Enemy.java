@@ -27,7 +27,7 @@ public class Enemy extends Character {
     public void loadImg() {
         switch (state) {
             case STANDING:
-                super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
+                super.loadImage("images/Sprites/Enemy/Enemy_Idle.gif");
                 break;
             case ATTACKING:
                 super.loadImage("images/Sprites/Enemy/Enemy_Attack.gif");
@@ -77,20 +77,25 @@ public class Enemy extends Character {
     }
 
     public void chase(Player target){
-        if ((Math.abs(super.getX() - target.getX()) < 60) && (this.can_attack) && (state != EntityState.ATTACKED)) {
+        if (Math.abs(super.getX() - target.getX()) < 60) {
+            super.state = EntityState.STANDING;
             super.stand();
-            super.attack(target, 20);
-            this.can_attack = false;
+            if ((this.can_attack) && (state != EntityState.ATTACKED)) {
+                super.attack(target, 20);
+                this.can_attack = false;
 
-            if(super.getX() < target.getX()){
-                super.pos = EFacing.FACING_RIGHT;
-            } else {
-                super.pos = EFacing.FACING_LEFT;
+                if (super.getX() < target.getX()) {
+                    super.pos = EFacing.FACING_RIGHT;
+                } else {
+                    super.pos = EFacing.FACING_LEFT;
+                }
             }
         } else if (super.getX() < target.getX()-50){
+            super.state = EntityState.MOVING;
             super.pos = EFacing.FACING_RIGHT;
             super.moveRight(2);
         } else if (super.getX() > target.getX()+50){
+            super.state = EntityState.MOVING;
             super.pos = EFacing.FACING_LEFT;
             super.moveLeft(2);
         } else {

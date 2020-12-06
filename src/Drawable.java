@@ -183,6 +183,7 @@ public class Drawable extends JPanel implements ActionListener {
                 if(gameState == GameState.GAME_OVER){
                     gameState = GameState.PLAYING;
                     alysse.stand();
+                    alysse.combo_state = Combo.NONE;
                     killed = 0;
                     alysse.setHealth(200);
                     alysse.setX(100);
