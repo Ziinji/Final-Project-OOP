@@ -86,13 +86,16 @@ public class Player extends Character implements AttackState{
             this.state = EntityState.MOVING;
             super.pos = EFacing.FACING_LEFT;
             super.moveLeft(4);
+            combo_state = Combo.NONE;
         }
 
         if (key == KeyEvent.VK_RIGHT) {
             this.state = EntityState.MOVING;
             super.pos = EFacing.FACING_RIGHT;
             super.moveRight(4);
+            combo_state = Combo.NONE;
         }
+
     }
 
     public void holdBeforeRelease(Combo now){
@@ -132,11 +135,13 @@ public class Player extends Character implements AttackState{
         if (key == KeyEvent.VK_LEFT) {
             super.stand();
             super.state = EntityState.STANDING;
+            attacking = true;
         }
 
         if (key == KeyEvent.VK_RIGHT) {
             super.stand();
             super.state = EntityState.STANDING;
+            attacking = true;
         }
     }
 
