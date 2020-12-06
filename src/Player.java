@@ -12,7 +12,7 @@ public class Player extends Character implements AttackState{
     public boolean zPressed = false;
     public boolean xPressed = false;
     Combo combo_state = Combo.NONE;
-    Timer timerPlayer = new Timer();
+    private Timer timerPlayer = new Timer();
 
     public Combo getCombo_state() {
         return combo_state;
@@ -139,4 +139,15 @@ public class Player extends Character implements AttackState{
             super.state = EntityState.STANDING;
         }
     }
+
+    public void doneAttack(Character monster){
+
+        timerPlayer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Player.super.doneAttack(monster);
+            }
+        }, 300);
+    }
+
 }

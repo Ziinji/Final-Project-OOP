@@ -6,12 +6,12 @@ import java.util.*;
 public class Enemy extends Character {
 
     private boolean can_attack = false;
+    private Timer timerEnemyAttack = new Timer();
 
     public Enemy(){
         loadImg();
         spawn();
         super.setY(325);
-        Timer timerEnemyAttack = new Timer();
         timerEnemyAttack.scheduleAtFixedRate(new TimerTask() {
             public void run() {
                 Enemy.this.toggle_attack();
@@ -39,13 +39,16 @@ public class Enemy extends Character {
     }
 
     public void toggle_attack(){
-        super.state = EntityState.ATTACKING;
-        this.can_attack = true;
+        if(state != EntityState.ATTACKED){
+            super.state = EntityState.ATTACKING;
+            this.can_attack = true;
+        }
     }
 
     public void done_attack(){
-
-        super.state = EntityState.STANDING;
+        if (state != EntityState.ATTACKED){
+            super.state = EntityState.STANDING;
+        }
     }
 
     public void spawn(){
@@ -70,7 +73,7 @@ public class Enemy extends Character {
     }
 
     public void chase(Player target){
-        if ((Math.abs(super.getX() - target.getX()) < 60) && (this.can_attack)) {
+        if ((Math.abs(super.getX() - target.getX()) < 60) && (this.can_attack) && (state != EntityState.ATTACKED)) {
             super.stand();
             super.attack(target, 20);
             this.can_attack = false;
@@ -90,4 +93,5 @@ public class Enemy extends Character {
             super.stand();
         }
     }
+
 }
