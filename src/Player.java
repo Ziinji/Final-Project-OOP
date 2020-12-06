@@ -12,6 +12,7 @@ public class Player extends Character implements AttackState{
     public boolean zPressed = false;
     public boolean xPressed = false;
     Combo combo_state = Combo.NONE;
+    Timer timerPlayer = new Timer();
 
     public Combo getCombo_state() {
         return combo_state;
@@ -22,7 +23,6 @@ public class Player extends Character implements AttackState{
         super.setHealth(200);
         super.setX(100);
         super.setY(325);
-        Timer timerPlayer = new Timer();
         /*timerPlayer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
                 Player.this.attacked();
@@ -95,25 +95,38 @@ public class Player extends Character implements AttackState{
         }
     }
 
+    public void holdBeforeRelease(Combo now){
+        xPressed = false;
+        zPressed = false;
+        attacking = true;
+        if (combo_state == Combo.ZZZ){
+            combo_state = Combo.NONE;
+        }
+        else if (combo_state == Combo.XX){
+            combo_state = Combo.NONE;
+        }
+        super.state = EntityState.STANDING;
+    }
+
     public void keyReleased(KeyEvent e) {
         int key = e.getKeyCode();
 
         if (key == KeyEvent.VK_Z){
-            zPressed = false;
-            attacking = true;
-            if (combo_state == Combo.ZZZ){
-                combo_state = Combo.NONE;
-            }
-            super.state = EntityState.STANDING;
+            timerPlayer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    holdBeforeRelease(Combo.ZZZ);
+                }
+            }, 300);
         }
 
         if (key == KeyEvent.VK_X){
-            xPressed = false;
-            attacking = true;
-            if (combo_state == Combo.XX){
-                combo_state = Combo.NONE;
-            }
-            super.state = EntityState.STANDING;
+            timerPlayer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    holdBeforeRelease(Combo.XX);
+                }
+            }, 300);
         }
 
         if (key == KeyEvent.VK_LEFT) {
