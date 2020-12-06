@@ -96,6 +96,9 @@ public class Drawable extends JPanel implements ActionListener {
         g2d.drawString("GAME OVER",260,200);
         g2d.drawString("Enemies Killed:",245,280);
         g2d.drawString(Integer.toString(killed),455,360);
+        g2d.setColor(Color.red);
+        g2d.setFont(new Font("Times New Roman", Font.BOLD,45));
+        g2d.drawString("Press SPACE to try again",235,420);
     }
 
 
@@ -178,6 +181,16 @@ public class Drawable extends JPanel implements ActionListener {
                     gameState = GameState.PAUSED;
                 }
             }
+            if (key == KeyEvent.VK_SPACE){
+                if(gameState == GameState.GAME_OVER){
+                    gameState = GameState.PLAYING;
+                    alysse.stand();
+                    killed = 0;
+                    alysse.setHealth(200);
+                    alysse.setX(100);
+                    monster.spawn();
+                }
+            }
             if (gameState == GameState.PLAYING) {
                 if (alysse.attacking) {
                     alysse.state = EntityState.ATTACKING;
@@ -185,13 +198,10 @@ public class Drawable extends JPanel implements ActionListener {
                     alysse.attacking = false;
 
                     if(key == KeyEvent.VK_Z){
-                        alysse.zPressed = true;
                         switch(alysse.combo_state){
                             case NONE:
                             case X:
                                 alysse.attack(monster, 20);
-                                // Delay here. Jadi pas attack dia state NONE, abis attack state Z
-                                // Delay on animation. Abis pencet tombol, tahan PNG sekitar 200MS
                                 alysse.combo_state = Combo.Z;
                                 break;
                             case Z:
@@ -204,7 +214,6 @@ public class Drawable extends JPanel implements ActionListener {
                                 break;
                         }
                     } else if (key == KeyEvent.VK_X){
-                        alysse.xPressed = true;
                         switch (alysse.combo_state) {
                             case NONE:
                             case Z:

@@ -113,10 +113,12 @@ public class Character {
                 pos = EFacing.FACING_RIGHT;
                 setX(this.x +20);
                 target.x = target.x +75;
+                this.x = this.x +30;
             } else {
                 pos = EFacing.FACING_LEFT;
                 setX(this.x -20);
                 target.x = target.x -75;
+                this.x = this.x -30;
             }
         }
     }

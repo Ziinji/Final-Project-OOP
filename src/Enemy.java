@@ -25,16 +25,20 @@ public class Enemy extends Character {
     }
 
     public void loadImg() {
-        if (state == EntityState.STANDING) {
-            super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
-        } else if (state == EntityState.ATTACKING) {
-            super.loadImage("images/Sprites/Enemy/Enemy_Attack.gif");
-        } else if (state == EntityState.MOVING){
-            super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
-        } else if (state == EntityState.ATTACKED){
-            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
-        }else{
-            super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+        switch (state) {
+            case STANDING:
+                super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
+                break;
+            case ATTACKING:
+                super.loadImage("images/Sprites/Enemy/Enemy_Attack.gif");
+                break;
+            case MOVING:
+                super.loadImage("images/Sprites/Enemy/Enemy_Walk.gif");
+                break;
+            case ATTACKED:
+            case START:
+                super.loadImage("images/Sprites/Enemy/Sprite-0001.png");
+                break;
         }
     }
 
