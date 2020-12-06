@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
 enum EntityState{
     MOVING, STANDING, ATTACKING, START, ATTACKED
@@ -21,6 +23,7 @@ public class Character {
     private Image image;
     EFacing pos = EFacing.FACING_RIGHT;
     EntityState state = EntityState.START;
+    private java.util.Timer timerCharacter = new Timer();
 
     public void loadImage(String filename) {
         ImageIcon ii = new ImageIcon(filename);
@@ -109,6 +112,12 @@ public class Character {
         if(rect1.intersects(rect2) && (this.state != EntityState.ATTACKED)) {
             target.health = target.health-damage;
             target.state = EntityState.ATTACKED;
+            timerCharacter.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    target.state = EntityState.STANDING;
+                }
+            },300);
             if (this.x < target.x) {
                 pos = EFacing.FACING_RIGHT;
                 setX(this.x +20);
