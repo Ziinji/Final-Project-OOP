@@ -23,5 +23,5 @@
 
 ## Retrospective 
 
-N/A
+Karena Java tidak bisa mengambil sekumpulan gambar menjadi spritesheet, GIF harus digunakan untuk animasi karakter. Walau tampilannya tepat, terkadang ia memulai animasi dari tengah.
 
