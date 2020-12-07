@@ -27,10 +27,10 @@
 | 2.6 | Enemy pathfinding behavior |Birgitta |
 | 2.7 | Enemy attack behavior |Birgitta |
 | 2.8 | Create Sprites for enemy entity |Alfathar |
-| 3.1 | Error Handler depending on necessity | |
+| 3.1 | Error Handler depending on necessity |Alfathar |
 | 3.2 | Graphic and general aesthetic polishing |Alfathar |
-| 3.3 | Combo system finalization |Alfathar |
-| 3.4 | Enemy behavior finalization | |
+| 3.3 | Combo system finalization |Birgitta |
+| 3.4 | Enemy behavior finalization |Ghema |
 
 
 ## Sprint Backlog Plan (Sprint 1)
